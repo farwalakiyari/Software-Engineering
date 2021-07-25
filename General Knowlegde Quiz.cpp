@@ -9,15 +9,15 @@ int main()
 
 	string name;
 	char game;
-	char M,m,G,g; 
+	char C,S,M,G; // removed unused characters and added two more characters for Computer And Science Quiz.  
 	
-	cout<< "\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t---------------WELCOME TO THE QUIZ----------------" <<endl;
+	cout<< "---------------WELCOME TO THE QUIZ----------------" <<endl;
 	cout<<"Please Enter your name: ";
 	cin >> name;
 	
 	cout<< "\nHey! "<< name; 
 	cout<< " good to see you here."<<endl;
-	cout<< "We have two types of Quizes for you \n\nPress M for Mathematical, \nPress G for General Knowledge \n\nWhich one would you like to play?" <<endl;
+	cout<< "We have two types of Quizes for you \n\nPress C for Computer Science, \nPress S for Science \nPress M for Mathematical, \nPress G for General Knowledge \n\nWhich one would you like to play?" <<endl;
 	cin>> game;
 	
 	//GENERAL KNOWLEGDE QUIZ
@@ -30,7 +30,7 @@ int main()
 		
 		if(Ans == 'c')
 		{
-			cout<<"\nCorrect Answer\n\n"<<endl;
+			cout<<"\nCorrect Answer\n\n" <<endl;
 			
 		}
 		else 
@@ -57,7 +57,7 @@ int main()
 		if(Ans == 'd')
 		{
 			cout<<"\nCorrect Answer\n\n"<<endl;
-			
+						
 		}
 		else 
 			cout<<"\nWrong Answer.\n\n" << endl;
@@ -88,8 +88,9 @@ int main()
 		else 
 			cout<<"\nWrong Answer.\n\n" << endl;
 	
-		cout<<"\nWell Done" << name;
+		cout<<"\nWell Done,"<< name;
 		cout<<endl; 
+		
 	}
 	
 	
@@ -164,6 +165,152 @@ int main()
 		cout<<"\nWell done but You need to work hard " << name;
 		cout<<endl; 
 	}
+	
+	//COMPUTER SCIENCE QUIZ
+	if (game == 'C' )
+	{	
+		//QUESTION #1
+		char Ans;
+		cout<<"Question #1 : What does CPU stands for? \na) Common procedure unit \nb) Central processing unit \nc) Central programming unit \nd) None of these" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'b')
+		{
+			cout<<"\nCorrect Answer\n\n" <<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+	 	
+	 	//QUESTION #2
+		cout<<"Question #2 : Who is known as father of Computer? \na) Bill gates \nb) Mark Zuckerburg \nc) Charles Babbage \nd) Tim Berner's Lee" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'c')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+		
+		//QUESTION #3 
+		cout<<"Question #3 : When was C Language developed? \na) 1972 \nb) 1872 \nc) 1992 \nd) 1927" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'a')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+						
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+	
+		//QUESTION #4
+		cout<<"Question #4 : What does ROM stands for? \na) Random Only Mode \nb) Read Only Mode \nc) Random Only Memory \nd) Read Only Memory" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'd')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+	
+		//QUESTION #5
+		cout<<"Question #5 : What type of operating system is MS-DOS? \na) GUI  \nb) Multitasking \nc) CLI \nd) Menu driven interface" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'c')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+		cout<<"\nWell Done,"<< name;
+		cout<<endl; 
+		
+	}
+	
+	//GENERAL SCIENCE QUIZ
+	if (game == 'S' )
+	{	
+		//QUESTION #1
+		char Ans;
+		cout<<"Question #1 : How many Planets are there in the solar system? \na) 8 \nb) 9 \nc) 11 \nd) None of these" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'a')
+		{
+			cout<<"\nCorrect Answer\n\n" <<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+	
+	 	//QUESTION #2
+		cout<<"Question #2 : The sun is known as? \na) Planet \nb) Star \nc) Meteor \nd) Asteroid" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'b')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+		
+		//QUESTION #3 
+		cout<<"Question #3 : The average adult has a blood volume of about ________ liters? \na) 4 \nb) 5 \nc) 8 \nd) 2" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'b')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+						
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+	
+		//QUESTION #4
+		cout<<"Question #4 : The SI unit of Pressure is? \na) Henry \nb) Tesla \nc) Joule \nd) Pascal" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'd')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+	
+		//QUESTION #5
+		cout<<"Question #5 : Which lense is used by a camera to form an image? \na) Convex lense  \nb) Condenser lense \nc) Concave lense \nd) None of these" <<endl;
+		cin>> Ans;
+		
+		if(Ans == 'a')
+		{
+			cout<<"\nCorrect Answer\n\n"<<endl;
+			
+		}
+		else 
+			cout<<"\nWrong Answer.\n\n" << endl;
+	
+		cout<<"\nWell Done,"<< name;
+		cout<<endl; 
+	}
+	
 	
 	else 
 		cout<<"THE CHARACTER YOU HAVE ENTERED IS INVALID, PLEASE ENTER IT AGAIN.";
